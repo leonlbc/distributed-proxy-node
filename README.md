@@ -4,7 +4,9 @@
 
 Esta aplicação implementa um sistema distribuído de proxy para uma rede local (LAN). Ela garante que exatamente um nó na rede atue como proxy para lidar com requisições que exigem conectividade com um serviço que apenas um dos nós está conectado. Outros nós na LAN descobrem automaticamente e redirecionam as requisições para o proxy ativo.
 
-![DistributedProxy](https://github.com/user-attachments/assets/1b664660-88c4-4d4f-a78d-252595199925)
+
+![DistributedProxy](https://github.com/user-attachments/assets/d1246e45-33d8-4eb4-9007-796f2e65ab72)
+
 
 ## Principais Funcionalidades
 
@@ -22,6 +24,7 @@ Esta aplicação implementa um sistema distribuído de proxy para uma rede local
 5. **Servidor HTTP Proxy**  
    - O nó proxy executa um servidor HTTP em Flask.
    - Disponibiliza o endpoint (ex.: `/requestExternalData`) para encaminhar requisições para o serviço externo.
+![DistributedProxy](https://github.com/user-attachments/assets/c7002f18-cf61-4503-b18e-f788bb98e0b6)
 
 6. **Implementação**  
    Todos os componentes, incluindo a checagem de conexão, broadcast, listener e servidor HTTP, estão encapsulados em um único script Python.
@@ -46,6 +49,4 @@ Esta aplicação implementa um sistema distribuído de proxy para uma rede local
    Lida com todas as requisições externas e envia broadcasts de sua disponibilidade.
 - **Nós Não-Proxy**  
    Ouvem o proxy ativo, redirecionam suas requisições através dele e assumem o papel de proxy caso ganhem conectividade.
-
-
 
