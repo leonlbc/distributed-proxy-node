@@ -24,7 +24,6 @@ Esta aplicação implementa um sistema distribuído de proxy para uma rede local
 5. **Servidor HTTP Proxy**  
    - O nó proxy executa um servidor HTTP em Flask.
    - Disponibiliza o endpoint (ex.: `/requestExternalData`) para encaminhar requisições para o serviço externo.
-![DistributedProxy](https://github.com/user-attachments/assets/c7002f18-cf61-4503-b18e-f788bb98e0b6)
 
 6. **Implementação**  
    Todos os componentes, incluindo a checagem de conexão, broadcast, listener e servidor HTTP, estão encapsulados em um único script Python.
